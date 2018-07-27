@@ -1,23 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	background: transparent;
+}
+
 body 
 {
-background-color: #536693;
-font-family: arial narrow;
-
+background-color: #1C1E3E;
+color: #818399;
+font-family: 'Open Sans Condensed';
 }
 
-h1
-{
-	text-align: center;
-	color: #AEB9D2;
-	text-shadow: 2px 2px #192D5C;
-	text-decoration: underline;
-	
-	
+.maindiv{
+	margin-top: 0;
+	background-color: white;
+	color: #1C1E3E;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-p
-{
-	text-align: center;
-	color: #AEB9D2;
-		
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+	padding: 0 18px;
+	margin-bottom: 5px;
+	background-color: white;
+	color: #1C1E3E;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+
+.acordion:after{
+	font-size: 13px;
+	color: #777;
+	float: right;
+	margin-left: 5px;
+}
+
+.expand{
+	float: right;
+	font-weight: bold;
+	color: #444;
 }
